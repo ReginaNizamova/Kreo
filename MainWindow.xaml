@@ -1,0 +1,458 @@
+﻿<Window x:Class="Kreo10.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Kreo10"
+        mc:Ignorable="d"
+        Title="KREO" Icon="Sources\favicon.png"   
+        Height="6729" Width="35" MinHeight="600" MinWidth="1000">
+
+
+    <Window.Resources>
+        <Style TargetType="Button" x:Key="Default">
+            <Setter Property="Background"   Value="#e64e04"/>
+            <Setter Property="Foreground"   Value="#FFFFFF"/>
+            <Setter Property="Cursor"       Value="Hand"/>
+            <Setter Property="FontFamily"   Value="raleway-heavy"/>
+            <Setter Property="FontSize"     Value="14"/>
+            <Setter Property="BorderBrush"  Value="Transparent"/>
+            <Setter Property="FontWeight"   Value="ExtraBold"/>
+        </Style>
+        <Style TargetType="Label" x:Key="LabelHeading">
+            <Setter Property="Background"   Value="Transparent"/>
+            <Setter Property="Foreground"   Value="#FFFFFF"/>
+            <Setter Property="FontFamily"   Value="raleway-heavy"/>
+            <Setter Property="FontSize"     Value="17"/>
+            <Setter Property="FontWeight"   Value="UltraBold"/>
+            <Setter Property="FontStretch"  Value="Condensed"/> 
+        </Style>
+        <Style TargetType="Label" x:Key="LabelHeadingInBox">
+            <Setter Property="Background"   Value="Transparent"/>
+            <Setter Property="Foreground"   Value="#fdc501"/>
+            <Setter Property="FontFamily"   Value="raleway-heavy"/>
+            <Setter Property="FontSize"     Value="15"/>
+            <Setter Property="FontWeight"   Value="UltraBold"/>
+            <Setter Property="FontStretch"  Value="Condensed"/>
+        </Style>
+        <Style TargetType="TextBlock" x:Key="Text">
+            <Setter Property="Background"   Value="Transparent"/>
+            <Setter Property="FontSize"     Value="21"/>
+            <Setter Property="FontFamily"   Value="merriweather-light"/>
+            <Setter Property="Foreground"   Value="#575859"/>
+            <Setter Property="FontWeight"   Value="Normal"/>
+            <Setter Property="LineHeight"   Value="40"/> 
+        </Style>
+        <Style TargetType="TextBlock" x:Key="TextInBox">
+            <Setter Property="Background"   Value="Transparent"/>
+            <Setter Property="FontSize"     Value="18"/>
+            <Setter Property="FontFamily"   Value="merriweather-light"/>
+            <Setter Property="Foreground"   Value="#575859"/>
+            <Setter Property="FontWeight"   Value="Normal"/>
+            <Setter Property="LineHeight"   Value="30"/>
+        </Style>
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="69"/>
+                <RowDefinition Height="607"/>
+                <RowDefinition Height="1062"/>
+                <RowDefinition Height="986"/>
+                <RowDefinition Height="750"/>
+                <RowDefinition Height="750"/>
+                <RowDefinition Height="380"/>
+                <RowDefinition Height="570"/>
+                <RowDefinition Height="1100"/>
+                <RowDefinition Height="455"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="9*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            
+            <Image Grid.ColumnSpan="3" Grid.RowSpan="2" Source="D:\С#\Kreo10\Sources\images\portfolio\modals/m-underwater.jpg"  Stretch="Fill"/>
+
+            <!--Иконки соц. сетей на панели меню-->
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" Margin="650 0 0 0"  Width="140">
+                <Image  Height="20" Margin="0 20"  Source="Sources\images\logo\facebook_icon.png" Stretch="Uniform"  VerticalAlignment="Top"  Width="15"/>
+                <Image  Height="20" Margin="25 22" Source="Sources\images\logo\twitter_icon.png"  Stretch="Uniform"  VerticalAlignment="Top" />
+                <Image  Height="25" Margin="0 19"  Source="Sources\images\logo\google_icon.png"   Stretch="Uniform"  VerticalAlignment="Top" />
+            </StackPanel>
+            
+
+            <Button Background="#fdc501" Grid.Column="1"  HorizontalAlignment="Left" Width="114"/>
+
+            <!--Панель меню-->
+            <StackPanel Grid.Column="1" HorizontalAlignment="Left" Orientation="Horizontal" Width="600">
+                <Image  Margin="25" Source="Sources\images\logo\logoK@2x.png" Width="65"/>
+                <Button Background="Transparent" Content="HOME."     Style="{StaticResource Default}" HorizontalAlignment="Left"  Margin="15"/>
+                <Button Background="Transparent" Content="WORKS."    Style="{StaticResource Default}" HorizontalAlignment="Left"  Margin="15"/>
+                <Button Background="Transparent" Content="SERVICES." Style="{StaticResource Default}" HorizontalAlignment="Left"  Margin="15"/>
+                <Button Background="Transparent" Content="ABOUT."    Style="{StaticResource Default}" HorizontalAlignment="Right" Margin="15"/>
+                <Button Background="Transparent" Content="CONTACT."  Style="{StaticResource Default}" HorizontalAlignment="Right" Margin="15"/>
+            </StackPanel>
+            
+            
+            <!--Фон-->
+            <Border Background="#12151B" Grid.ColumnSpan="3" Grid.Row="2"/>
+            <Border Background="#12151B" Grid.ColumnSpan="3" Grid.Row="3"/>
+            <Border Background="#111417" Grid.ColumnSpan="3" Grid.Row="4"/>
+            <Border Background="#111417" Grid.ColumnSpan="3" Grid.Row="5"/>
+            <Border Background="#111417" Grid.ColumnSpan="3" Grid.Row="6"/>
+            <Border Background="#e4b101" Grid.ColumnSpan="3" Grid.Row="7"/>
+            <Border Background="#12151B" Grid.ColumnSpan="3" Grid.Row="8"/>
+            <Border Background="#111417" Grid.ColumnSpan="3" Grid.Row="9"/>
+
+            
+            <Button Content="MORE ABOUT US ˅" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Height="54" HorizontalAlignment="Right" Margin="0 0 0 450" Style="{StaticResource Default}" Width="200"/>
+
+            <!--Заголовки-->
+            <Label  Content="OUR LATEST PROJECTS." Grid.Column="1" Grid.Row="2" Height="30" HorizontalAlignment="Left" Margin="0 0 0 750" Style="{StaticResource LabelHeading}" />
+            <Label  Content="OUR LATEST SERVICES." Grid.Column="1" Grid.Row="3" Height="30" HorizontalAlignment="Left" Margin="0 0 0 750" Style="{StaticResource LabelHeading}" />
+            <Label  Content="WHO ARE WE."          Grid.Column="1" Grid.Row="4" Height="30" HorizontalAlignment="Left" Margin="0 50" Style="{StaticResource LabelHeading}"  VerticalAlignment="Top"/>
+            <Label  Content="MEET OUR TEAM."       Grid.Column="1" Grid.Row="5" Height="30" HorizontalAlignment="Left" Margin="0 50" Style="{StaticResource LabelHeading}"  VerticalAlignment="Top"/>
+
+            
+            <!--Основной текст--> 
+            <Viewbox  Grid.Column="1" Grid.Row="2" Height="150" Margin="0 225" Stretch="Uniform" VerticalAlignment="Top">
+                <TextBlock Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <LineBreak /> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt <LineBreak /> explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                </TextBlock>
+            </Viewbox>
+
+            <!--Основной текст-->
+            <Viewbox  Grid.Column="1" Grid.Row="3" Height="150" Margin="0 200" Stretch="Uniform" VerticalAlignment="Top">
+                <TextBlock Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <LineBreak /> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt <LineBreak /> explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                </TextBlock>
+            </Viewbox>
+
+            <!--Основной текст-->
+            <Viewbox  Grid.Column="1" Grid.Row="4" Height="150" Margin="0 150" Stretch="Uniform" VerticalAlignment="Top">
+                <TextBlock Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, <LineBreak /> totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt <LineBreak /> explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.
+                </TextBlock>
+            </Viewbox>
+
+
+            <!--Панель картинок-->
+            <Viewbox  Grid.ColumnSpan="3" Grid.Row="2"  Margin="50 350 50 0" Stretch="Uniform" VerticalAlignment="Center">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio\underwater.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/hotel.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/beetle.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/banjo-player.jpg"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/lighthouse.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/girl.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/coffee.jpg"/>
+                        <Image Cursor="Hand"  Source="Sources\images\portfolio/judah.jpg"/>
+                    </StackPanel>
+                </StackPanel>
+            </Viewbox>
+            
+            
+            <!--Заголовки TextBlock--> 
+            <Viewbox  Grid.Column="1" Grid.Row="3"  Margin="0 0 0 225" Stretch="Uniform" VerticalAlignment="Center">
+                <StackPanel  Orientation="Horizontal">
+                    <Label Content="Marketing."   Margin="0 0 15 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Videography." Margin="0 0 15 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Photography." Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                </StackPanel>
+            </Viewbox>
+
+            <!--Заголовки TextBlock-->
+            <Viewbox  Grid.Column="1" Grid.Row="3"  Margin="0 0 0 270" Stretch="Uniform" VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Branding."        Margin="0 0 15 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Web Design."      Margin="0 0 15 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Web Development." Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                </StackPanel>
+            </Viewbox>
+          
+
+            <Viewbox Grid.Column="1" Grid.Row="3" Height="250" Margin="0 100 0 0" Stretch="Uniform" >
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="18" Margin="0 0 15 0" Style="{StaticResource TextInBox}"  Width="350" >                    
+                        Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Margin="0 0 15 0" Style="{StaticResource TextInBox}"  Width="350">                   
+                        Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Style="{StaticResource TextInBox}"  Width="350">                  
+                        Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                </StackPanel>
+            </Viewbox>
+
+
+            <Viewbox  Grid.Column="1" Grid.Row="3" Height="250" Margin="0 750 0 0" Stretch="Uniform" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock FontSize="18"  Margin="0 0 15 0" Style="{StaticResource TextInBox}" Width="350">
+                     Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18"  Margin="0 0 15 0" Style="{StaticResource TextInBox}"  Width="350" >
+                     Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18" Style="{StaticResource TextInBox}" Width="350">
+                     Sed ut perspiciatis unde omnis iste natus <LineBreak /> error sit voluptatem accusantium <LineBreak />doloremque laudantium, totam rem <LineBreak />aperiam, eaque ipsa quae ab illo inventore <LineBreak />veritatis et quasi architecto beatae vitae <LineBreak />dicta sunt explicabo. Nemo enim ipsam <LineBreak />voluptatem quia voluptas sit aspernatur<LineBreak /> aut odit aut fugit.
+                    </TextBlock>
+                </StackPanel>
+            </Viewbox>
+
+ 
+            <!--Заголовки TextBlock-->
+            <Viewbox  Grid.Column="1" Grid.Row="4"  Margin="0 0 0 110" Stretch="Uniform" VerticalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Our Process."   FontSize="12"  Margin="0 0 55 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Our Approach."  FontSize="12"  Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                </StackPanel>
+            </Viewbox>
+
+            <!--Заголовки TextBlock-->
+            <Viewbox  Grid.Column="1" Grid.Row="4"  Margin="0 0 0 200" Stretch="Uniform" VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal">
+                    <Label Content="Our Goal."    FontSize="12"  Margin="0 0 55 0" Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                    <Label Content="Our Mission." FontSize="12"  Style="{StaticResource LabelHeadingInBox}" Width="350"/>
+                </StackPanel>
+            </Viewbox>
+           
+
+
+            <Viewbox  Grid.Column="1" Grid.Row="4" Margin="0 100 0 0" Stretch="Uniform" VerticalAlignment="Center">
+                <StackPanel  Orientation="Horizontal">
+                    <TextBlock  FontSize="18" HorizontalAlignment="Left" Margin="0 0 100 0" Style="{StaticResource TextInBox}" Width="520">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam, eaque<LineBreak /> ipsa quae ab illo inventore veritatis et quasi architecto beatae<LineBreak /> vitae dicta sunt explicabo. Nemo enim ipsamvoluptatem quia <LineBreak /> voluptas sit aspernatur aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18" HorizontalAlignment="Right"  Style="{StaticResource TextInBox}"  Width="520">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam, eaque<LineBreak /> ipsa quae ab illo inventore veritatis et quasi architecto beatae<LineBreak /> vitae dicta sunt explicabo. Nemo enim ipsamvoluptatem quia <LineBreak /> voluptas sit aspernatur aut odit aut fugit.
+                    </TextBlock>
+                </StackPanel>
+            </Viewbox>
+
+
+            <Viewbox  Grid.Column="1" Grid.Row="4" Margin="0 50" Stretch="Uniform" VerticalAlignment="Bottom">
+                <StackPanel Orientation="Horizontal" >
+                    <TextBlock FontSize="18" HorizontalAlignment="Left" Margin="0 0 100 0" Style="{StaticResource TextInBox}" Width="520">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam, eaque<LineBreak /> ipsa quae ab illo inventore veritatis et quasi architecto beatae<LineBreak /> vitae dicta sunt explicabo. Nemo enim ipsamvoluptatem quia <LineBreak /> voluptas sit aspernatur aut odit aut fugit.
+                    </TextBlock>
+                    <TextBlock FontSize="18" HorizontalAlignment="Right"  Style="{StaticResource TextInBox}"  Width="520">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam, eaque<LineBreak /> ipsa quae ab illo inventore veritatis et quasi architecto beatae<LineBreak /> vitae dicta sunt explicabo. Nemo enim ipsamvoluptatem quia <LineBreak /> voluptas sit aspernatur aut odit aut fugit.
+                    </TextBlock>
+                </StackPanel>
+            </Viewbox>
+
+ 
+            
+            <!--Информация о команде-->          
+            <StackPanel Grid.Column="1" Grid.Row="5"  HorizontalAlignment="Left" Margin="0 150 0 0" Orientation="Vertical" VerticalAlignment="Top" Width="245">
+                <Image Source="Sources\images\team/member01-k.jpg"/>
+                <Label Content="Naruto Uzumaki"    FontSize="18" Margin="0 15 0 0" Style="{StaticResource LabelHeadingInBox}"/>
+                <Label Content="Creative Director" FontSize="14" Foreground="#FFFFFF"/>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock FontSize="18" Margin="0 20 0 0" Style="{StaticResource TextInBox}">
+                        Proin gravida nibh vel velit <LineBreak />auctor aliquet. Aenean<LineBreak /> sollicitudin, lorem quis<LineBreak /> bibendum auctor, nisi elit<LineBreak /> consequat ipsum, nec sagittis<LineBreak /> sem nibh id elit.
+                    </TextBlock>
+                </Viewbox>
+                <StackPanel Height="20" Margin="0 15" Orientation="Horizontal">
+                    <Image  Height="15"               Source="Sources\images\logo\facebook_icon.png" Stretch="Uniform"  Width="15"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\twitter_icon.png"  Stretch="Uniform"/>
+                    <Image                            Source="Sources\images\logo\google_icon.png"   Stretch="Uniform"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\in_icon.png"       Stretch="Uniform"  Width="20"/>
+                    <Image  Height="15"               Source="Sources\images\logo\skype_icon.png"    Stretch="Uniform"  Width="20"/>
+                </StackPanel>
+            </StackPanel>
+           
+
+
+            <!--Информация о команде-->
+            <StackPanel Grid.Column="1" Grid.Row="5"  HorizontalAlignment="Left" Margin="270 150 0 0" Orientation="Vertical" VerticalAlignment="Top" Width="245">
+                <Image Source="Sources\images\team/member03-k.jpg"/>
+                <Label Content="Sasuke Uchiha" FontSize="18" Margin="0 15 0 0" Style="{StaticResource LabelHeadingInBox}"/>
+                <Label Content="Lead Designer" FontSize="14" Foreground="#FFFFFF"/>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock FontSize="18" Margin="0 20 0 0" Style="{StaticResource TextInBox}">
+                        Proin gravida nibh vel velit <LineBreak />auctor aliquet. Aenean<LineBreak /> sollicitudin, lorem quis<LineBreak /> bibendum auctor, nisi elit<LineBreak /> consequat ipsum, nec sagittis<LineBreak /> sem nibh id elit.
+                    </TextBlock>
+                </Viewbox>
+                <StackPanel Height="20" Margin="0 15" Orientation="Horizontal">
+                    <Image  Height="15"               Source="Sources\images\logo\facebook_icon.png" Stretch="Uniform"  Width="15"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\twitter_icon.png"  Stretch="Uniform"/>
+                    <Image                            Source="Sources\images\logo\google_icon.png"   Stretch="Uniform"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\in_icon.png"       Stretch="Uniform"  Width="20"/>
+                    <Image  Height="15"               Source="Sources\images\logo\skype_icon.png"    Stretch="Uniform"  Width="20"/>
+                </StackPanel>
+            </StackPanel>
+            
+
+ 
+            <!--Информация о команде-->
+            <StackPanel Grid.Column="1" Grid.Row="5"  HorizontalAlignment="Left" Margin="540 150 0 0" Orientation="Vertical" VerticalAlignment="Top" Width="245">
+                <Image Source="Sources\images\team/member04-k.jpg"/>
+                <Label Content="Shikamaru Nara" FontSize="18" Margin="0 15 0 0" Style="{StaticResource LabelHeadingInBox}"/>
+                <Label Content="Designer"       FontSize="14" Foreground="#FFFFFF"/>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock FontSize="18" Margin="0 20 0 0" Style="{StaticResource TextInBox}">
+                        Proin gravida nibh vel velit <LineBreak />auctor aliquet. Aenean<LineBreak /> sollicitudin, lorem quis<LineBreak /> bibendum auctor, nisi elit<LineBreak /> consequat ipsum, nec sagittis<LineBreak /> sem nibh id elit.
+                    </TextBlock>
+                </Viewbox>
+                <StackPanel Height="20" Margin="0 15" Orientation="Horizontal">
+                    <Image  Height="15"               Source="Sources\images\logo\facebook_icon.png" Stretch="Uniform"  Width="15"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\twitter_icon.png"  Stretch="Uniform"/>
+                    <Image                            Source="Sources\images\logo\google_icon.png"   Stretch="Uniform"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\in_icon.png"       Stretch="Uniform"  Width="20"/>
+                    <Image  Height="15"               Source="Sources\images\logo\skype_icon.png"    Stretch="Uniform"  Width="20"/>
+                </StackPanel>
+            </StackPanel>
+         
+
+            <!--Информация о команде-->
+            <StackPanel Grid.Column="1" Grid.Row="5"  HorizontalAlignment="Left" Margin="810 150 0 0" Orientation="Vertical" VerticalAlignment="Top" Width="245">
+                <Image Source="Sources\images\team/member05-k.jpg"/>
+                <Label Content="Sakura Haruno" FontSize="18" Margin="0 15 0 0" Style="{StaticResource LabelHeadingInBox}"/>
+                <Label Content="Designer"      FontSize="14" Foreground="#FFFFFF"/>
+                <Viewbox Stretch="Uniform">
+                    <TextBlock FontSize="18" Margin="0 20 0 0" Style="{StaticResource TextInBox}">
+                        Proin gravida nibh vel velit <LineBreak />auctor aliquet. Aenean<LineBreak /> sollicitudin, lorem quis<LineBreak /> bibendum auctor, nisi elit<LineBreak /> consequat ipsum, nec sagittis<LineBreak /> sem nibh id elit.
+                    </TextBlock>
+                </Viewbox>
+                <StackPanel Height="20" Margin="0 15" Orientation="Horizontal">
+                    <Image  Height="15"               Source="Sources\images\logo\facebook_icon.png" Stretch="Uniform"  Width="15"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\twitter_icon.png"  Stretch="Uniform"/>
+                    <Image                            Source="Sources\images\logo\google_icon.png"   Stretch="Uniform"/>
+                    <Image  Height="15" Margin="20 0" Source="Sources\images\logo\in_icon.png"       Stretch="Uniform"  Width="20"/>
+                    <Image  Height="15"               Source="Sources\images\logo\skype_icon.png"    Stretch="Uniform"  Width="20"/>
+                </StackPanel>
+            </StackPanel>
+            
+
+
+            <StackPanel Grid.Column="1" Grid.Row="6"  HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center">
+                <Label Content="Styleshout Recommends Dreamhost." FontSize="30" HorizontalAlignment="Center" Style="{StaticResource LabelHeading}"/>
+                <TextBlock FontSize="22" Margin="0 25" TextAlignment="Center" Style="{StaticResource TextInBox}">
+                    Looking for an awesome and reliable webhosting? Try DreamHost. Get $50 off <LineBreak/> when you sign up with the promocode styleshout.
+                </TextBlock>
+                <Button Content="SIGN UP NOW" Height="50" Style="{StaticResource Default}" Width="400"/>
+            </StackPanel>
+
+
+            <TextBlock FontFamily="merriweather-regular" FontSize="26.5" Foreground="White" Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" Margin="0 0 0 150" LineHeight="50" TextAlignment="Center" Style="{StaticResource TextInBox}" VerticalAlignment="Center">
+                Your work is going to fill a large part of your life, and the only<LineBreak/> way to be truly satisfied is to do what you believe is great work.<LineBreak/> And the only way to do great work is to love what you<LineBreak/> do. If you haven't found it yet, keep looking. Don't settle. As with all<LineBreak/> matters of the heart, you'll know when you find it.
+            </TextBlock>
+
+            <Ellipse Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" Margin="0 250 100 0" VerticalAlignment="Center" Height="70" Stretch="Uniform" Stroke="White" StrokeThickness="7" StrokeDashCap="Round" Width="70">
+                <Ellipse.Fill>
+                    <ImageBrush ImageSource="Sources\images\team\member01-k.jpg" Stretch="Uniform"/>
+                </Ellipse.Fill>
+            </Ellipse>
+            <StackPanel Grid.Column="1" Grid.Row="7" HorizontalAlignment="Center" Margin="250 250 0 0" Orientation="Vertical" VerticalAlignment="Center" Width="250">
+                <Label Content="STEVE JOBS"  Margin="10 0" Style="{StaticResource LabelHeading}"/>
+                <Label Content="CEO, Apple." FontFamily="raleway-bold"  FontSize="15" Foreground="#575859" Margin="10 0"/>
+            </StackPanel>
+
+            <!--Обратная связь-->            
+            <StackPanel Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" Orientation="Vertical" VerticalAlignment="Center" Width="400">
+                <Label  Content="GET IN TOUCH WITH US." Style="{StaticResource LabelHeading}"/>
+                <TextBox Background="#575859" BorderThickness="0" FontSize="16" Height="60"  Margin="0 70 0 50"  Text="Name"    Opacity="0.5" Padding="12"/>
+                <TextBox Background="#575859" BorderThickness="0" FontSize="16" Height="60"                      Text="Email"   Opacity="0.5" Padding="12"/>
+                <TextBox Background="#575859" BorderThickness="0" FontSize="16" Height="60"  Margin="0 50 0 50"  Text="Subject" Opacity="0.5" Padding="12"/>
+                <TextBox Background="#575859" BorderThickness="0" FontSize="16" Height="300"                     Text="Message" Opacity="0.5" Padding="12"/>
+                <Button  Background="#fdc501" Content="SUBMIT" FontWeight="ExtraBold" FontSize="16" Height="60" Margin="0 50"/>
+            </StackPanel>
+         
+
+
+            <!--Контакты--> 
+            <Viewbox  Grid.ColumnSpan="3" Grid.Row="8" HorizontalAlignment="Center" Margin="500 0 0 230" Stretch="Uniform" VerticalAlignment="Center" Width="450">
+                <StackPanel  Orientation="Vertical">
+                    <TextBlock FontSize="22" Margin="0 30" Style="{StaticResource TextInBox}">
+                    Sed ut perspiciatis unde omnis iste natus error sit<LineBreak/> voluptatem accusantium doloremque laudantium,<LineBreak/> totam rem aperiam, eaque ipsa quae ab illo<LineBreak/> inventore veritatis et quasi architecto beatae vitae<LineBreak/> dicta sunt explicabo.
+                    </TextBlock>
+                    <Label Content="Come Visit" FontSize="18" FontWeight="ExtraBold" Style="{StaticResource LabelHeadingInBox}"/>
+                    <TextBlock Margin="0 30"  Style="{StaticResource TextInBox}">
+                    1600 Amphitheatre Parkway<LineBreak/> Mountain View, CA<LineBreak/> 94043 US
+                    </TextBlock>
+                    <Label Content="Contact Numbers:" FontSize="18" FontWeight="ExtraBold" Style="{StaticResource LabelHeadingInBox}"/>
+                    <TextBlock Margin="0 30"  Style="{StaticResource TextInBox}">
+                    Phone: (000) 555 1212<LineBreak/> Mobile: (000) 555 0100<LineBreak/> Fax: (000) 555 0101
+                    </TextBlock>
+                </StackPanel>
+            </Viewbox>
+
+
+
+            <Button Content="BACK TO TOP ^" Grid.Column="1" Grid.Row="8" Grid.RowSpan="2" Height="55" HorizontalAlignment="Center" Margin="0 430" Style="{StaticResource Default}" VerticalAlignment="Bottom" Width="190"/>
+
+            <!--Иконки соц. сетей-->
+            <StackPanel Grid.Column="1" Grid.Row="9" Height="40" HorizontalAlignment="Center" Margin="0 80"  Orientation="Horizontal" VerticalAlignment="Top">
+                <Image Margin="0 0 30 0"  Source="Sources\images\logo\facebook_icon_dark.png" Width="40"/>
+                <Image                    Source="Sources\images\logo\twitter_icon_dark.png"  Width="40"/>
+                <Image Margin="30 0 30 0" Source="Sources\images\logo\google_icon_dark.png"   Width="40"/>
+                <Image                    Source="Sources\images\logo\youtube_icon_dark.png"  Width="40"/>
+                <Image Margin="30 0 30 0" Source="Sources\images\logo\v_icon_dark.png"        Width="40"/>
+                <Image                    Source="Sources\images\logo\icon_dark.png"          Width="40"/>
+                <Image Margin="30 0 30 0" Source="Sources\images\logo\skype_icon_dark.png"    Width="40"/>
+            </StackPanel>
+          
+
+
+            <StackPanel Grid.Column="1" Grid.Row="9" HorizontalAlignment="Center" Orientation="Vertical" VerticalAlignment="Center">
+                <Image Grid.Column="1" Grid.Row="9" Height="25" Margin="0 130 0 30" Opacity="0.1" Source="D:\С#\Kreo10\Sources\images\logo\logoW@2x.png"/>
+                <TextBlock  FontWeight="DemiBold" TextAlignment="Center" Opacity="0.4" Style="{StaticResource TextInBox}">
+                    This is Photoshop's version of Lorem Ipsum. Proin gravida nibh vel velit<LineBreak/> auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit<LineBreak/> consequat ipsum, nec sagittis sem nibh id elit.
+                </TextBlock>
+                <TextBlock  FontSize="15" FontWeight="DemiBold"  Margin="0 70 0 0" TextAlignment="Center" Opacity="0.4" Style="{StaticResource TextInBox}">
+                    © Copyright 2015 KREO.   Design by Styleshout..
+                </TextBlock>
+            </StackPanel>
+
+ 
+            <!--Информация о сайте-->           
+            <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" x:Name="SayHello" Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock FontFamily="raleway-heavy" FontSize="50" FontWeight="Bold" Foreground="White">
+                    Say hello to Kreo. We create <LineBreak/> awesome and stunning digital <LineBreak/> solutions.
+                </TextBlock>
+                <TextBlock Foreground="White" Margin="0 50" Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam
+                </TextBlock>
+            </StackPanel>
+           
+
+            <!--Информация о сайте-->
+            <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" x:Name="WeAre" Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock FontFamily="raleway-heavy" FontSize="50" FontWeight="Bold" Foreground="White">
+                    We are a small design studio <LineBreak/> dedicated to build great <LineBreak/> digital products.
+                </TextBlock>
+                <TextBlock Foreground="White" Margin="0 50" Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam
+                </TextBlock>
+            </StackPanel>
+           
+ 
+            <!--Информация о сайте-->
+            <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" x:Name="TakeALook" Orientation="Vertical" VerticalAlignment="Center">
+                <TextBlock FontFamily="raleway-heavy" FontSize="50" FontWeight="Bold" Foreground="White">
+                    Take a look at some of <LineBreak/> our works or get in touch to <LineBreak/> discuss gow we can help you.
+                </TextBlock>
+                <TextBlock Foreground="White" Margin="0 50" Style="{StaticResource Text}">
+                     Sed ut perspiciatis unde omnis iste natus error sit voluptatem <LineBreak /> accusantium doloremque laudantium, totam rem aperiam
+                </TextBlock>
+            </StackPanel>
+           
+            
+            <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" Margin="50 0 0 110" Orientation="Horizontal" VerticalAlignment="Bottom">
+                <RadioButton x:Name="RadioButton1"  IsChecked="True"   Checked="RadioButton1_Checked" />
+                <RadioButton x:Name="RadioButton2"  Margin="20 0 20 0" Checked="RadioButton2_Checked"/>
+                <RadioButton x:Name="RadioButton3"                     Checked="RadioButton3_Checked"/>
+            </StackPanel>
+        </Grid>
+    </ScrollViewer>
+</Window>
