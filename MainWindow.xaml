@@ -112,10 +112,6 @@
             
             <Button Content="MORE ABOUT US ˅" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Height="54" HorizontalAlignment="Right" Margin="0 0 0 450" Style="{StaticResource Default}" Width="200"/>
 
-            <!--<Viewbox Stretch="Uniform" Grid.Column="1" Grid.Row="5"  Height="30" Margin="0 50" HorizontalAlignment="Left" VerticalAlignment="Top" >
-                <Label  Content="MEET OUR TEAM."     Style="{StaticResource LabelHeading}"  />
-            </Viewbox>-->
-
             <StackPanel Orientation="Vertical" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Margin="0 50 0 0">
                        <Label  Content="OUR LATEST PROJECTS." Height="30" Margin="0 0 0 50"  Style="{StaticResource LabelHeading}" />
                         <TextBlock Style="{StaticResource Text}">
